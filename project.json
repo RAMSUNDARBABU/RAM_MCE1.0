@@ -1,7 +1,7 @@
 {
   "name": "RAM_MCE1.0",
-  "description": "This project is created to maintain prod test cases for MCE IDV environment",
-  "main": "Others\\Batch_DynamicDataMining.xaml",
+  "description": "This project is created to maintain MCE 1.0",
+  "main": "Main.xaml",
   "dependencies": {
     "ReporterForUiPath.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.10.4]",
@@ -13,7 +13,7 @@
   "webServices": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.4.1.0",
-  "projectVersion": "1.0.83738384",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -27,7 +27,7 @@
   },
   "designOptions": {
     "projectProfile": "Developement",
-    "outputType": "Tests",
+    "outputType": "Process",
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
@@ -35,273 +35,98 @@
     "fileInfoCollection": [
       {
         "editingStatus": "Publishable",
-        "testCaseId": "10740c8d-2db0-484a-88ff-b487e9d81e98",
-        "fileName": "ReusableFunctions\\LicenseCLEO\\LicenseCLEO_PageLoad.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "a4c92b8f-11dd-49bb-abab-07d1a9803a62",
-        "fileName": "ReusableFunctions\\LoginLogout\\Login_esd_aaa.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "7bb122da-e2b6-4a17-baf5-5cdea9bf91e9",
-        "fileName": "ReusableFunctions\\LoginLogout\\Login_rnattama.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "a40aa137-dbb2-4e1c-a54b-f4fc4409e45b",
-        "fileName": "ReusableFunctions\\LoginLogout\\Logout_esd_aaa.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "d2d6aac0-f010-4d51-a993-554b280b55ce",
-        "fileName": "ReusableFunctions\\LoginLogout\\Logout_MCE.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "c1a1f133-07c4-4367-a579-8939a3a194f6",
-        "fileName": "Devices\\TC09_AllDevicesCheck.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "d5bfe978-209a-4e21-8e1f-0ce5864807ef",
-        "fileName": "TestCase.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "583daa1a-6410-4b09-a857-342dd09b59ba",
-        "fileName": "ReusableFunctions\\Others\\CloseCookiespopup.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "fc2331d3-b0ec-4d73-ae9a-80b0b28ccef5",
-        "fileName": "ReusableFunctions\\LoginLogout\\NewWelcomeMsg.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "fae4d4cf-e6b5-4199-b7a0-9b8478ff1dcb",
-        "fileName": "ReusableFunctions\\Navigation\\AccountOverview.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "a8e0ba89-67e9-4125-90db-1dff85c3ae45",
+        "testCaseId": "8b37a3f2-5875-44c0-aa5a-9e4fae276658",
         "fileName": "eDelivery\\eDelivery_TC01_NoSAFlowForCustomer.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "5e8990ae-5a40-44de-8953-9e19262d6f24",
+        "testCaseId": "858d0fd4-9140-418c-93dd-873452a08b5e",
         "fileName": "eDelivery\\eDelivery_TC02_SASelectionwithMultipleSAs_Customer.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "fb48bb51-ad30-432d-a8f9-076b9030ac4a",
+        "testCaseId": "864bf5d9-b5c5-4737-99d9-b5582aca0118",
         "fileName": "eDelivery\\eDelivery_TC03_DDC Reg. page with wrong combination.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "d889a76b-0d9c-4cd8-a972-94412b380ac6",
+        "testCaseId": "ed94be72-02d7-4180-98a1-b1434bc50b35",
         "fileName": "eDelivery\\eDelivery_TC04_Software central eDelivery_redirecting to MCE eDelivery.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "d9e36bbe-1aa0-4f32-a218-a19c4958fde6",
+        "testCaseId": "5a433a73-4082-4d74-8ea7-3ba9fb709943",
         "fileName": "eDelivery\\eDelivery_TC05_SAVACheckinUserView.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "69f624ca-e7e2-4ce3-848a-6de819afc749",
+        "testCaseId": "256f5d01-8918-43a7-b48d-ec9772466ab6",
         "fileName": "eDelivery\\eDelivery_TC06_SA_Column_OrderSummary.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "3a3e62c8-8f66-4cb6-adc3-a791cab95488",
+        "testCaseId": "7282ce9e-3073-44d4-9b22-2876efe315b7",
         "fileName": "eDelivery\\eDelivery_TC07_Account view is not visible in orders tab.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "eb39504f-fa29-4931-8e2e-eddea5c61125",
+        "testCaseId": "39294423-a558-4cc0-b99b-2214824a0809",
         "fileName": "eDelivery\\eDelivery_TC08_DDC Reg. page with correct Order and DDC.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "e4cb7693-775f-4f53-8019-c79337074288",
-        "fileName": "eDelivery\\eDelivery_TC09_ValidateSearch.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "2f59625e-f1ac-4ec6-a8d4-fc67dab20142",
-        "fileName": "eDelivery\\eDelivery_TC10_SendOBA_EventHistoryCheck.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "6fec268d-c26c-4b3e-8e26-193a68a35134",
-        "fileName": "eDelivery\\eDelivery_TC11_Software_EULA_License_download_success.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "2e542b0e-bf9c-4679-b8fe-24ead5c728af",
-        "fileName": "eDelivery\\eDelivery_ValidateSearch_DownloadHistory_PageLoad.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "6c9c8dc2-0cb4-48b4-bd3e-091602e457ab",
-        "fileName": "eDelivery\\eDelivery_ValidateSearch_EventHistory_PageLoad.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "9e62bb89-7957-4e1a-b077-7efbfa6ad3b3",
-        "fileName": "eDelivery\\eDelivery_ValidateSearch_Order_History_Download.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "f3ae888c-3ea1-4fbb-b66d-63a99ed51c3d",
-        "fileName": "eDelivery\\eDelivery_ValidateSearch_SendOBA_PageLoad.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "3af86000-d25e-429f-81a4-9ef05c9eee9e",
-        "fileName": "ReusableFunctions\\AccountOvervieworSASelection\\TC03_esd_aaa_SASelection.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "18f1f8f8-bde8-449b-93d0-96516cb089d2",
-        "fileName": "ReusableFunctions\\LoginLogout\\PROD_Login_esd_aaa.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "1d7b9031-1371-4c66-a69c-bd207ca4d372",
-        "fileName": "ReusableFunctions\\LoginLogout\\Logout.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "ac228292-e8df-4502-81de-c3d51e9bd8dd",
-        "fileName": "ReusableFunctions\\LoginLogout\\PROD_Login_esd_bbb.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "e34acc35-7c8d-47e6-a622-9230dcec5601",
-        "fileName": "eDelivery\\eDeliveryBatch_Report.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "2d07dee4-5258-4034-9738-9f2e158bb484",
-        "fileName": "email\\Send_EmailAlert.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "19d2c1ca-13dd-4b76-8c3b-b70efd3a8459",
-        "fileName": "eDelivery\\eDelivery_TC01.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "05cb281e-fbe1-4603-a6cc-dc69f866bb65",
-        "fileName": "eDelivery\\eDelivery_TC02.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "946413e2-ccaa-4d7c-9440-eae724b522c4",
-        "fileName": "ReusableFunctions\\Others\\TechError.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "8d23a506-00f9-4169-ae05-c2c1536749f0",
-        "fileName": "ReusableFunctions\\Orders\\Feedbackformclose.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "fd48378a-eb45-42e4-a60e-764cb94d98f5",
-        "fileName": "ReusableFunctions\\Orders\\Orders_Page.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "820f48b2-a62b-440e-96c1-fdcca041ac00",
-        "fileName": "ReusableFunctions\\Orders\\Orders_Search.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "e42f035e-699c-47fd-838b-635db8137b58",
-        "fileName": "ReusableFunctions\\Orders\\ReadFileFromFolder.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "31a52bae-5b31-453c-bfa2-2572f84abe1c",
-        "fileName": "ReusableFunctions\\Navigation\\TC07C_Device_PageNavigation.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "bc9eac9a-b98c-484d-93b9-02b2b9ea67c9",
-        "fileName": "ReusableFunctions\\Navigation\\TC07D_Account_EventLog_PageNavigation.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "0d00147c-5d3d-43c0-bfac-8f8e3b42a33c",
-        "fileName": "ReusableFunctions\\Navigation\\TC07E_AccountOverview_PageNavigation.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "df1bb9b8-1e23-49d2-ab20-70c40283c37d",
-        "fileName": "ReusableFunctions\\MCE1.0\\TC06_SASelection_Internal_AV.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "d2d62edf-7d79-4c24-83bd-be232aa2db0a",
-        "fileName": "eDelivery\\eDelivery_MCE_Stage_Report(Batch).xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "fe2e6b23-1516-4345-a786-7b63f4b47a20",
-        "fileName": "ReusableFunctions\\LoginLogout\\CloseExistingLoginScreen.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "7dbf7abe-87cc-4889-9336-0cb1c7e8db59",
-        "fileName": "eDelivery\\DemoTest24thAug.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "82cbf0dc-58ea-4838-a4be-fdb271e9c791",
-        "fileName": "eDelivery\\DemoTest24thAugWriteLine.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "553705d2-3141-4f7f-877e-ea5afcf71bf6",
-        "fileName": "ReusableFunctions\\MCE1.0\\MCE1.0_Login_rnattama.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "9aca5374-99bf-471d-8509-ca4fa969d319",
-        "fileName": "ReusableFunctions\\MCE1.0\\MCE1.0_Logout_MCE.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "15506ab5-17ff-40ac-9b85-8745bfae70d6",
-        "fileName": "ReusableFunctions\\MCE1.0\\MCE1.0_Order_Page_Navigation.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "89cb7876-a18f-4d39-b1f0-1f44fbe1e382",
-        "fileName": "ReusableFunctions\\MCE1.0\\MCE1.0_SASelection_Internal.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "3d5328f7-ed53-4481-bcee-9cb853d48085",
-        "fileName": "eDelivery\\eDelivery_TC12_Software_EULA_License_download_success.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "82dbeb1c-f930-497b-83ff-dc7108e172eb",
+        "testCaseId": "35189fa2-8779-4117-8259-dc8a646d3f82",
         "fileName": "eDelivery\\eDelivery_TC09_10_11_6_5_Search_SendOBA_EventHistoryCheck.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "c23167c2-c8e1-44e0-8acb-1b43c853270c",
+        "testCaseId": "723c9ca6-c40b-4e15-9ef9-a0a9d09984c0",
         "fileName": "eDelivery\\eDelivery_TC09_TC10_Search_SendOBA_EventHistoryCheck.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "6bc562a8-d470-4d4e-b6b0-fce77d338145",
+        "testCaseId": "6a9f4813-74e2-4a1c-91b5-bc6d0d59e532",
+        "fileName": "eDelivery\\eDelivery_TC09_ValidateSearch.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fc9bcab6-bdeb-47fe-b42d-2569fb07fd73",
+        "fileName": "eDelivery\\eDelivery_TC12_Software_EULA_License_download_success.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b8840769-2e8e-4fae-8026-d04bc574bfbc",
+        "fileName": "eDelivery\\eDelivery_ValidateSearch_DownloadHistory_PageLoad.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e87e1528-884e-4108-aef5-cab18d57a600",
+        "fileName": "eDelivery\\eDelivery_ValidateSearch_EventHistory_PageLoad.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2fb9d701-4f1e-41d1-94cb-3e35d6d72891",
+        "fileName": "eDelivery\\eDelivery_ValidateSearch_Order_History_Download.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "25983c5e-e3a4-4082-a2da-cf0c6a78ef1c",
+        "fileName": "eDelivery\\eDelivery_ValidateSearch_Regular.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1e39b59a-c012-4f11-b227-3d902d25bcc5",
+        "fileName": "eDelivery\\eDelivery_ValidateSearch_SendOBA_PageLoad.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5519e73e-6792-4003-b778-982b216ff5c7",
         "fileName": "eDelivery\\MCE1.0_eDelivery_Stage_Report(Batch).xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "182bd6c2-ab7b-4e3a-b03a-26feded69063",
+        "fileName": "email\\Send_EmailAlert.xaml"
       }
     ]
   },
@@ -309,340 +134,5 @@
     "input": [],
     "output": []
   },
-  "expressionLanguage": "VisualBasic",
-  "entryPoints": [
-    {
-      "filePath": "ReusableFunctions\\LicenseCLEO\\LicenseCLEO_PageLoad.xaml",
-      "uniqueId": "10740c8d-2db0-484a-88ff-b487e9d81e98",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\Login_esd_aaa.xaml",
-      "uniqueId": "a4c92b8f-11dd-49bb-abab-07d1a9803a62",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\Login_rnattama.xaml",
-      "uniqueId": "7bb122da-e2b6-4a17-baf5-5cdea9bf91e9",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\Logout_esd_aaa.xaml",
-      "uniqueId": "a40aa137-dbb2-4e1c-a54b-f4fc4409e45b",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\Logout_MCE.xaml",
-      "uniqueId": "d2d6aac0-f010-4d51-a993-554b280b55ce",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "Devices\\TC09_AllDevicesCheck.xaml",
-      "uniqueId": "c1a1f133-07c4-4367-a579-8939a3a194f6",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Others\\CloseCookiespopup.xaml",
-      "uniqueId": "583daa1a-6410-4b09-a857-342dd09b59ba",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\NewWelcomeMsg.xaml",
-      "uniqueId": "fc2331d3-b0ec-4d73-ae9a-80b0b28ccef5",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Navigation\\AccountOverview.xaml",
-      "uniqueId": "fae4d4cf-e6b5-4199-b7a0-9b8478ff1dcb",
-      "input": [],
-      "output": [
-        {
-          "name": "out_accountOverview",
-          "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-        }
-      ]
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC01_NoSAFlowForCustomer.xaml",
-      "uniqueId": "a8e0ba89-67e9-4125-90db-1dff85c3ae45",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC02_SASelectionwithMultipleSAs_Customer.xaml",
-      "uniqueId": "5e8990ae-5a40-44de-8953-9e19262d6f24",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC03_DDC Reg. page with wrong combination.xaml",
-      "uniqueId": "fb48bb51-ad30-432d-a8f9-076b9030ac4a",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC04_Software central eDelivery_redirecting to MCE eDelivery.xaml",
-      "uniqueId": "d889a76b-0d9c-4cd8-a972-94412b380ac6",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC05_SAVACheckinUserView.xaml",
-      "uniqueId": "d9e36bbe-1aa0-4f32-a218-a19c4958fde6",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC06_SA_Column_OrderSummary.xaml",
-      "uniqueId": "69f624ca-e7e2-4ce3-848a-6de819afc749",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC07_Account view is not visible in orders tab.xaml",
-      "uniqueId": "3a3e62c8-8f66-4cb6-adc3-a791cab95488",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC08_DDC Reg. page with correct Order and DDC.xaml",
-      "uniqueId": "eb39504f-fa29-4931-8e2e-eddea5c61125",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC09_ValidateSearch.xaml",
-      "uniqueId": "e4cb7693-775f-4f53-8019-c79337074288",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC10_SendOBA_EventHistoryCheck.xaml",
-      "uniqueId": "2f59625e-f1ac-4ec6-a8d4-fc67dab20142",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC11_Software_EULA_License_download_success.xaml",
-      "uniqueId": "6fec268d-c26c-4b3e-8e26-193a68a35134",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_ValidateSearch_DownloadHistory_PageLoad.xaml",
-      "uniqueId": "2e542b0e-bf9c-4679-b8fe-24ead5c728af",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_ValidateSearch_EventHistory_PageLoad.xaml",
-      "uniqueId": "6c9c8dc2-0cb4-48b4-bd3e-091602e457ab",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_ValidateSearch_Order_History_Download.xaml",
-      "uniqueId": "9e62bb89-7957-4e1a-b077-7efbfa6ad3b3",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_ValidateSearch_SendOBA_PageLoad.xaml",
-      "uniqueId": "f3ae888c-3ea1-4fbb-b66d-63a99ed51c3d",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\AccountOvervieworSASelection\\TC03_esd_aaa_SASelection.xaml",
-      "uniqueId": "3af86000-d25e-429f-81a4-9ef05c9eee9e",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\PROD_Login_esd_aaa.xaml",
-      "uniqueId": "18f1f8f8-bde8-449b-93d0-96516cb089d2",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\Logout.xaml",
-      "uniqueId": "1d7b9031-1371-4c66-a69c-bd207ca4d372",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\PROD_Login_esd_bbb.xaml",
-      "uniqueId": "ac228292-e8df-4502-81de-c3d51e9bd8dd",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDeliveryBatch_Report.xaml",
-      "uniqueId": "e34acc35-7c8d-47e6-a622-9230dcec5601",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "email\\Send_EmailAlert.xaml",
-      "uniqueId": "2d07dee4-5258-4034-9738-9f2e158bb484",
-      "input": [
-        {
-          "name": "in_Str_EmailSubject",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": false
-        },
-        {
-          "name": "in_Dict_Config",
-          "type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": false
-        }
-      ],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC01.xaml",
-      "uniqueId": "19d2c1ca-13dd-4b76-8c3b-b70efd3a8459",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_TC02.xaml",
-      "uniqueId": "05cb281e-fbe1-4603-a6cc-dc69f866bb65",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Others\\TechError.xaml",
-      "uniqueId": "946413e2-ccaa-4d7c-9440-eae724b522c4",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Orders\\Feedbackformclose.xaml",
-      "uniqueId": "8d23a506-00f9-4169-ae05-c2c1536749f0",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Orders\\Orders_Page.xaml",
-      "uniqueId": "fd48378a-eb45-42e4-a60e-764cb94d98f5",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Orders\\Orders_Search.xaml",
-      "uniqueId": "820f48b2-a62b-440e-96c1-fdcca041ac00",
-      "input": [
-        {
-          "name": "out_OrderNumber",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": false
-        }
-      ],
-      "output": [
-        {
-          "name": "out_OrderNumber",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-        },
-        {
-          "name": "out_expectedOrderNumber",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-        }
-      ]
-    },
-    {
-      "filePath": "ReusableFunctions\\Orders\\ReadFileFromFolder.xaml",
-      "uniqueId": "e42f035e-699c-47fd-838b-635db8137b58",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Navigation\\TC07C_Device_PageNavigation.xaml",
-      "uniqueId": "31a52bae-5b31-453c-bfa2-2572f84abe1c",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Navigation\\TC07D_Account_EventLog_PageNavigation.xaml",
-      "uniqueId": "bc9eac9a-b98c-484d-93b9-02b2b9ea67c9",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\Navigation\\TC07E_AccountOverview_PageNavigation.xaml",
-      "uniqueId": "0d00147c-5d3d-43c0-bfac-8f8e3b42a33c",
-      "input": [],
-      "output": [
-        {
-          "name": "out_accountOverview",
-          "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-        }
-      ]
-    },
-    {
-      "filePath": "ReusableFunctions\\MCE1.0\\TC06_SASelection_Internal_AV.xaml",
-      "uniqueId": "df1bb9b8-1e23-49d2-ab20-70c40283c37d",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\eDelivery_MCE_Stage_Report(Batch).xaml",
-      "uniqueId": "d2d62edf-7d79-4c24-83bd-be232aa2db0a",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\LoginLogout\\CloseExistingLoginScreen.xaml",
-      "uniqueId": "fe2e6b23-1516-4345-a786-7b63f4b47a20",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\DemoTest24thAug.xaml",
-      "uniqueId": "7dbf7abe-87cc-4889-9336-0cb1c7e8db59",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "eDelivery\\DemoTest24thAugWriteLine.xaml",
-      "uniqueId": "82cbf0dc-58ea-4838-a4be-fdb271e9c791",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\MCE1.0\\MCE1.0_Login_rnattama.xaml",
-      "uniqueId": "553705d2-3141-4f7f-877e-ea5afcf71bf6",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\MCE1.0\\MCE1.0_Logout_MCE.xaml",
-      "uniqueId": "9aca5374-99bf-471d-8509-ca4fa969d319",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\MCE1.0\\MCE1.0_Order_Page_Navigation.xaml",
-      "uniqueId": "15506ab5-17ff-40ac-9b85-8745bfae70d6",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "ReusableFunctions\\MCE1.0\\MCE1.0_SASelection_Internal.xaml",
-      "uniqueId": "89cb7876-a18f-4d39-b1f0-1f44fbe1e382",
-      "input": [],
-      "output": []
-    }
-  ]
+  "expressionLanguage": "VisualBasic"
 }
