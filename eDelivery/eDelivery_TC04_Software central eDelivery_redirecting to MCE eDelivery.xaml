@@ -1,0 +1,507 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Software_central_eDelivery_redirecting_to_MCE_eDelivery" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1182,5496" sap2010:WorkflowViewState.IdRef="Software_central_eDelivery_redirecting_to_MCE_eDelivery_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Software_central_eDelivery_redirecting_to_MCE_eDelivery" sap:VirtualizedContainerService.HintSize="1165,5331" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://software-stage1.cisco.com/" Name="softwareCentralURL" />
+      <Variable x:TypeArguments="x:Boolean" Name="mceLogin" />
+      <Variable x:TypeArguments="x:Boolean" Name="accessMCElink" />
+      <Variable x:TypeArguments="x:String" Default="rnattama@cisco.com" Name="userName" />
+      <Variable x:TypeArguments="x:String" Name="pwd" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" testList="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="1123,84" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="TC04_Verify Software Central eDelivery url is redirecting to MCE eDelivery" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1123,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Verify Software Central eDelivery url is redirecting to MCE eDelivery&quot;]" />
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Private: Open Browser" sap:VirtualizedContainerService.HintSize="1123,4984" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="True" Url="[softwareCentralURL]">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1089,4883" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Browser initiation completed and opened Software Central Page" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="1047,132" sap2010:WorkflowViewState.IdRef="StepStatus_1" Name="Open Browser and Check Software Central Page is opened" Status="Info" TakeScreenshot="True" />
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1047,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Download and Image'" sap:VirtualizedContainerService.HintSize="1047,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7e6637dd-ad4f-4355-9280-a4be71cb7157" InformativeScreenshot="6b0298bb77a30d93e93bdfe29e967542" Selector="&lt;html app='chrome.exe' title='Cisco Software Central' /&gt;&lt;webctrl aaname='Download and manage' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="1047,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="6a4fd832-6d03-4d5f-a27d-5c23b07a7ce0" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:UiElementExists DisplayName="Element Exists 'Access MCE Link'" Exists="[accessMCElink]" sap:VirtualizedContainerService.HintSize="1047,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d73d051f-e45f-4f57-bf3f-af386fcf6412" InformativeScreenshot="4ef7e6828f667dff73d97aba65638424" Selector="&lt;html app='chrome.exe' title='Cisco Software Central' /&gt;&lt;webctrl tag='A' aaname='Access MCE' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <If Condition="[accessMCElink]" sap:VirtualizedContainerService.HintSize="1047,4109" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="902,3962" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Access MCE link is available and clicked" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="860,132" sap2010:WorkflowViewState.IdRef="StepStatus_2" Name="Check Access MCE link available and able to click" Status="Info" TakeScreenshot="True" />
+                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Access MCE Link'" sap:VirtualizedContainerService.HintSize="860,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5ff34e77-2665-42b6-bf53-7bcbe71edf1c" InformativeScreenshot="4ef7e6828f667dff73d97aba65638424" Selector="&lt;html app='chrome.exe' title='Cisco Software Central' /&gt;&lt;webctrl tag='A' aaname='Access MCE' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Cisco.com'" sap:VirtualizedContainerService.HintSize="860,3552" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="f35bac3fe2a3f44d9d7987fc4f0f4e35" Selector="&lt;html app='chrome.exe' title='Cisco.com Login Page' /&gt;">
+                    <ui:BrowserScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="826,3406" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="It opened MCE Page successfully when user Click Access MCE link from Software Central Page" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="784,132" sap2010:WorkflowViewState.IdRef="StepStatus_3" Name="Check MCE page is opened from Software Central Page" Status="Pass" TakeScreenshot="True" />
+                          <ui:UiElementExists DisplayName="Element Exists 'Log in to your account'" Exists="[mceLogin]" sap:VirtualizedContainerService.HintSize="784,106" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+                            <ui:UiElementExists.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="93d84a67-548a-43b1-a25d-d11e9a24b384" InformativeScreenshot="30ad4355622e1dbc78ca03c5a78383fa" Selector="&lt;html app='chrome.exe' title='Cisco.com Login Page' /&gt;&lt;webctrl aaname='Log in to your account' /&gt;" WaitForReady="COMPLETE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:UiElementExists.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:UiElementExists>
+                          <If Condition="[mceLogin]" sap:VirtualizedContainerService.HintSize="784,2996" sap2010:WorkflowViewState.IdRef="If_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="639,2849" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:Boolean" Name="eDeliveryPage" />
+                                  <Variable x:TypeArguments="x:Boolean" Name="sendMeaPush" />
+                                  <Variable x:TypeArguments="ss:SecureString" Name="password" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="MCE_INTERNAL_RNATTAMA" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="597,22" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[password]" Username="[userName]" />
+                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="597,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="Opening MCE URL" />
+                                <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="5000" DelayMS="5000" DisplayName="Click 'Log in to your account'" sap:VirtualizedContainerService.HintSize="597,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92195f28-ed84-4eff-84ad-4964e3d226be" InformativeScreenshot="30ad4355622e1dbc78ca03c5a78383fa" Selector="&lt;html app='chrome.exe' title='Cisco.com Login Page' /&gt;&lt;webctrl aaname='Log in to your account' /&gt;" WaitForReady="COMPLETE">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                    </ui:Target>
+                                  </ui:Click.Target>
+                                </ui:Click>
+                                <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Clicked on Log in to your account in MCE Page" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="597,132" sap2010:WorkflowViewState.IdRef="StepStatus_4" Name="Click on Log in to your account in MCE Page" Status="Pass" TakeScreenshot="True" />
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayMS="5000" DisplayName="Type UserName" EmptyField="True" sap:VirtualizedContainerService.HintSize="597,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[userName+ &quot;[k(enter)]&quot;]">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6bfc51b9-cd6c-42fe-a9b6-839b43c264ef" InformativeScreenshot="a507e3e0db5ed3d7124cb7bcd29dd13b" Selector="&lt;html app='chrome.exe' title='Cisco.com Login Page' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='Email' /&gt;" WaitForReady="COMPLETE">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                    </ui:Target>
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
+                                <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Entered User Name" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="597,132" sap2010:WorkflowViewState.IdRef="StepStatus_5" Name="Enter User Name" Status="Pass" TakeScreenshot="True" />
+                                <ui:TypeSecureText AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="5000" DelayMS="5000" DisplayName="Type Password" EmptyField="True" sap:VirtualizedContainerService.HintSize="597,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_2" SecureText="[password]">
+                                  <ui:TypeSecureText.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="993b7535-514f-418d-a403-72e54cfe8717" InformativeScreenshot="4cf92861fb8aa68c000d55de5345964d" Selector="&lt;html app='chrome.exe' title='Cisco.com Login Page' /&gt;&lt;webctrl id='passwordInput' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                    </ui:Target>
+                                  </ui:TypeSecureText.Target>
+                                </ui:TypeSecureText>
+                                <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Entered Password" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="597,132" sap2010:WorkflowViewState.IdRef="StepStatus_6" Name="Enter Password" Status="Pass" TakeScreenshot="True" />
+                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="10000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="597,116" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                  <ui:SendHotkey.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="079ee783-d9a8-4fe8-a157-db1af9be864a">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:SendHotkey.Target>
+                                </ui:SendHotkey>
+                                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Two-Factor'" sap:VirtualizedContainerService.HintSize="597,1456" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="a9e95e300a876a3d1834ea153ff434fd" Selector="&lt;html app='chrome.exe' title='Two-Factor Authentication' /&gt;">
+                                  <ui:BrowserScope.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="563,1310" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="5000" DelayMS="5000" DisplayName="Click 'Choose an authentication'" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition Position="Center">
+                                              <ui:CursorPosition.OffsetX>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetX>
+                                              <ui:CursorPosition.OffsetY>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetY>
+                                            </ui:CursorPosition>
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="49bb460f-3dec-43ac-b9f0-5a87eaa65830" InformativeScreenshot="33e5957ed9f5ae231b211c938148a2ee" Selector="&lt;html app='chrome.exe' title='Two-Factor Authentication' /&gt;&lt;webctrl tag='H2' aaname=' Choose an authentication method ' /&gt;" WaitForReady="COMPLETE">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                            </ui:Target>
+                                          </ui:Click.Target>
+                                        </ui:Click>
+                                        <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Clicked on Choose an authentication label" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="521,132" sap2010:WorkflowViewState.IdRef="StepStatus_7" Name="Check user is able to click on Choose an authentication label" Status="Info" TakeScreenshot="True" />
+                                        <ui:UiElementExists DisplayName="Element Exists 'Send Me a Push'" Exists="[sendMeaPush]" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+                                          <ui:UiElementExists.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0cdab3df-98e2-49fc-b1ef-a8bad5f5ec60" InformativeScreenshot="532718ad9eb93031cab8cd8e65e26e04" Selector="&lt;html app='chrome.exe' title='Two-Factor Authentication' /&gt;&lt;webctrl aaname='Send Me a Push ' tag='BUTTON' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:UiElementExists.Target>
+                                        </ui:UiElementExists>
+                                        <If Condition="[sendMeaPush]" sap:VirtualizedContainerService.HintSize="521,754" sap2010:WorkflowViewState.IdRef="If_5">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="376,607" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="15000" DisplayName="Click 'Send Me a Push'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                <ui:Click.CursorPosition>
+                                                  <ui:CursorPosition Position="Center">
+                                                    <ui:CursorPosition.OffsetX>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetX>
+                                                    <ui:CursorPosition.OffsetY>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetY>
+                                                  </ui:CursorPosition>
+                                                </ui:Click.CursorPosition>
+                                                <ui:Click.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74204231-455d-4847-a706-b37d89b112d1" InformativeScreenshot="c3f36cad7aec07224b8ccf374878ea5c" Selector="&lt;webctrl aaname='Send Me a Push ' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+                                                    <ui:Target.TimeoutMS>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:Target.TimeoutMS>
+                                                  </ui:Target>
+                                                </ui:Click.Target>
+                                              </ui:Click>
+                                              <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Clicked on Send Me a Push" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="StepStatus_8" Name="Click Send Me a Push" Status="Info" TakeScreenshot="True" />
+                                              <ui:UiElementExists DisplayName="Element Exists 'View Orders by'" Exists="[eDeliveryPage]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_9">
+                                                <ui:UiElementExists.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74948124-4863-40a2-bf20-08df78665d36" InformativeScreenshot="eb898a4054e03b4b8944a1bd9ffc2b52" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl tag='H1' aaname='View Orders by ' /&gt;" TimeoutMS="60000" WaitForReady="COMPLETE" />
+                                                </ui:UiElementExists.Target>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ui:UiElementExists>
+                                              <If Condition="[eDeliveryPage]" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_6">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <If.Then>
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="480,1912" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                                    <Sequence.Variables>
+                                                      <Variable x:TypeArguments="x:String" Name="orderCount" />
+                                                    </Sequence.Variables>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="eDelivery page is loaded successfully" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="438,132" sap2010:WorkflowViewState.IdRef="StepStatus_9" Name="Check eDelivey Page load" Status="Pass" TakeScreenshot="True" />
+                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="438,61" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="eDelivery Page opened successfully" />
+                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                                      <TryCatch.Try>
+                                                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'STRONG'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                                                          <ui:GetValue.Target>
+                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c069d792-d184-4e7e-a910-b6c4bb2eccf2" InformativeScreenshot="f7d69b4c7942895b5ca259f88a734084" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl tag='STRONG' aaname='* Order(s)' /&gt;" WaitForReady="COMPLETE">
+                                                              <ui:Target.TimeoutMS>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:Target.TimeoutMS>
+                                                            </ui:Target>
+                                                          </ui:GetValue.Target>
+                                                          <ui:GetValue.Value>
+                                                            <OutArgument x:TypeArguments="x:String">[orderCount]</OutArgument>
+                                                          </ui:GetValue.Value>
+                                                        </ui:GetValue>
+                                                      </TryCatch.Try>
+                                                      <TryCatch.Catches>
+                                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ActivityAction x:TypeArguments="s:Exception">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="376,355" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Could not find UI Element &quot; + exception.Message]" />
+                                                              <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="[&quot;Could not find UI Element &quot; + exception.Message]" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="StepStatus_12" Name="Error" Status="Fail" TakeScreenshot="True" />
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </Catch>
+                                                      </TryCatch.Catches>
+                                                    </TryCatch>
+                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="438,61" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;Total number of records in Orders page &quot; + orderCount]" />
+                                                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Logout_MCE workflow" sap:VirtualizedContainerService.HintSize="438,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="ReusableFunctions\LoginLogout\Logout_MCE.xaml">
+                                                      <ui:InvokeWorkflowFile.Arguments>
+                                                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                      </ui:InvokeWorkflowFile.Arguments>
+                                                    </ui:InvokeWorkflowFile>
+                                                    <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+                                                    <Delay mva:VisualBasic.Settings="{x:Null}" DisplayName="Delay 5 seconds" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="Delay_1">
+                                                      <TextExpression.Namespaces>
+                                                        <sco:Collection x:TypeArguments="x:String">
+                                                          <x:String>System.Activities</x:String>
+                                                          <x:String>System.Activities.Statements</x:String>
+                                                          <x:String>System.Activities.Expressions</x:String>
+                                                          <x:String>System.Activities.Validation</x:String>
+                                                          <x:String>System.Activities.XamlIntegration</x:String>
+                                                          <x:String>Microsoft.VisualBasic.Activities</x:String>
+                                                          <x:String>System</x:String>
+                                                          <x:String>System.Collections.Generic</x:String>
+                                                          <x:String>System.Data</x:String>
+                                                          <x:String>System.Diagnostics</x:String>
+                                                          <x:String>System.IO</x:String>
+                                                          <x:String>System.Linq</x:String>
+                                                          <x:String>System.Management.Automation</x:String>
+                                                          <x:String>System.Net.Mail</x:String>
+                                                          <x:String>System.Xml</x:String>
+                                                          <x:String>System.Xml.Linq</x:String>
+                                                          <x:String>UiPath.Library</x:String>
+                                                          <x:String>System.Windows.Markup</x:String>
+                                                        </sco:Collection>
+                                                      </TextExpression.Namespaces>
+                                                      <TextExpression.References>
+                                                        <sco:Collection x:TypeArguments="AssemblyReference">
+                                                          <AssemblyReference>System.Activities</AssemblyReference>
+                                                          <AssemblyReference>mscorlib</AssemblyReference>
+                                                          <AssemblyReference>System.Data</AssemblyReference>
+                                                          <AssemblyReference>System</AssemblyReference>
+                                                          <AssemblyReference>System.Core</AssemblyReference>
+                                                          <AssemblyReference>System.Management.Automation</AssemblyReference>
+                                                          <AssemblyReference>System.Xml</AssemblyReference>
+                                                          <AssemblyReference>System.Xml.Linq</AssemblyReference>
+                                                          <AssemblyReference>UiPath.Library</AssemblyReference>
+                                                          <AssemblyReference>PresentationFramework</AssemblyReference>
+                                                          <AssemblyReference>WindowsBase</AssemblyReference>
+                                                          <AssemblyReference>PresentationCore</AssemblyReference>
+                                                          <AssemblyReference>System.Xaml</AssemblyReference>
+                                                        </sco:Collection>
+                                                      </TextExpression.References>
+                                                      <sap2010:WorkflowViewState.ViewStateManager>
+                                                        <sap2010:ViewStateManager>
+                                                          <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="200,22" Id="Delay_1" />
+                                                        </sap2010:ViewStateManager>
+                                                      </sap2010:WorkflowViewState.ViewStateManager>
+                                                    </Delay>
+                                                    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Cisco'" sap:VirtualizedContainerService.HintSize="438,260" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="24cea14634dcf5473eaead671a22dd91" Selector="&lt;html app='chrome.exe' title='Cisco Software Central' /&gt;">
+                                                      <ui:BrowserScope.Body>
+                                                        <ActivityAction x:TypeArguments="x:Object">
+                                                          <ActivityAction.Argument>
+                                                            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                                          </ActivityAction.Argument>
+                                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="CloseTab_2" />
+                                                          </Sequence>
+                                                        </ActivityAction>
+                                                      </ui:BrowserScope.Body>
+                                                    </ui:BrowserScope>
+                                                    <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Verification completed and closing all application " DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="438,132" sap2010:WorkflowViewState.IdRef="StepStatus_10" Name="Close Application" Status="Info" TakeScreenshot="True" />
+                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Verification completed for Software Central eDelivery url is redirecting to MCE eDelivery&quot;]" />
+                                                    <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Verification completed for Software Central eDelivery url is redirecting to MCE eDelivery" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="438,132" sap2010:WorkflowViewState.IdRef="StepStatus_11" Name="Verification Status" Status="Pass" TakeScreenshot="True" />
+                                                  </Sequence>
+                                                </If.Then>
+                                              </If>
+                                            </Sequence>
+                                          </If.Then>
+                                        </If>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:BrowserScope.Body>
+                                </ui:BrowserScope>
+                              </Sequence>
+                            </If.Then>
+                          </If>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:BrowserScope.Body>
+                  </ui:BrowserScope>
+                </Sequence>
+              </If.Then>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>

@@ -1,0 +1,291 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DDC_Reg__page_with_wrong_combination" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1026,4161" sap2010:WorkflowViewState.IdRef="DDC_Reg__page_with_wrong_combination_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="24">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DDC_Reg__page_with_wrong_combination" sap:VirtualizedContainerService.HintSize="608,3996" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="12345" Name="enterCode" />
+      <Variable x:TypeArguments="x:String" Default="7556733" Name="orderNumber" />
+      <Variable x:TypeArguments="x:String" Name="errormsg" />
+      <Variable x:TypeArguments="x:Boolean" Name="ddcRegpopup" />
+      <Variable x:TypeArguments="x:Boolean" Name="ddcRegistrationPage" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" testList="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="566,84" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="TC03_Verify DDC Registration page, if user enters wrong combination of SO#,serial Number &amp; DDC, then system will throw error" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="566,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Verify DDC Registration page, if user enters wrong combination of SO#,serial Number &amp; DDC, then system will throw error&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Login_rnattama_DDC workflow" sap:VirtualizedContainerService.HintSize="566,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="ReusableFunctions\LoginLogout\Login_rnattama_DDC.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:UiElementExists DisplayName="Element Exists 'DDC Registration popup'" Exists="[ddcRegistrationPage]" sap:VirtualizedContainerService.HintSize="566,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+      <ui:UiElementExists.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d14dda39-56b1-4679-a6c1-9911b4d98ed4" InformativeScreenshot="21da6719518a3987afadfbcf10d9f196" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl tag='FORM' /&gt;" TimeoutMS="60000" WaitForReady="COMPLETE" />
+      </ui:UiElementExists.Target>
+    </ui:UiElementExists>
+    <If Condition="[ddcRegistrationPage]" sap:VirtualizedContainerService.HintSize="566,1302" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="418,1154" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1062" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'Code'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[enterCode]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f0610c67-3b2c-4003-b5db-f08cf687d4b1" InformativeScreenshot="b68685b4c6209b321f4e11ad06cb299f" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl aaname='Please enter the Digital Download Code provided in the Digital D*' parentid='modal--ddc' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl parentid='modal--ddc' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Entered invalid Code" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="StepStatus_1" Name="Check Code entry" Status="Info" TakeScreenshot="True" />
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'Order Number'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[orderNumber]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e199b179-9c73-49e2-a7fb-57a95c511df7" InformativeScreenshot="9685c5be8f9d6886c48aeb9e0cc4368c" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl aaname='Please enter the Cisco Order Number provided as “Order#” in the *' parentid='modal--ddc' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl parentid='modal--ddc' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Entered invalid Order Number" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="StepStatus_2" Name="Check Order Number entry" Status="Info" TakeScreenshot="True" />
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bd37e098-7bf8-4763-9a62-246fd808fc00" InformativeScreenshot="53b76a967210205d75629c290f296385" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Clicked on Submit button" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="StepStatus_3" Name="Click on Submit button" Status="Info" TakeScreenshot="True" />
+          </Sequence>
+        </Sequence>
+      </If.Then>
+    </If>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="566,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="421,204" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CloseCookiespopup workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="ReusableFunctions\Others\CloseCookiespopup.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="566,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="421,204" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke NewWelcomeMsg workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="ReusableFunctions\LoginLogout\NewWelcomeMsg.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:OnImageAppear ContinueOnError="{x:Null}" FoundElement="{x:Null}" DisplayName="On Image Appear 'chrome.exe My'" sap:VirtualizedContainerService.HintSize="566,299" sap2010:WorkflowViewState.IdRef="OnImageAppear_1" RepeatForever="False">
+      <ui:OnImageAppear.Body>
+        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="272,153" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Done" />
+        </Sequence>
+      </ui:OnImageAppear.Body>
+      <ui:OnImageAppear.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+      </ui:OnImageAppear.Image>
+      <ui:OnImageAppear.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="75b8c1a0-5f42-4b87-b5bb-217a0f484997" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:OnImageAppear.Target>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:OnImageAppear>
+    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="566,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Displayed error message for entering wrong code and order number" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="566,132" sap2010:WorkflowViewState.IdRef="StepStatus_4" Name="Check Error message is displayed for entering wrong code and roder number" Status="Pass" TakeScreenshot="True" />
+    <ui:UiElementExists DisplayName="Element Exists 'DDC Reg. popup'" Exists="[ddcRegpopup]" sap:VirtualizedContainerService.HintSize="566,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+      <ui:UiElementExists.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8563a6a4-452f-4850-9ba0-539d7a8de376" InformativeScreenshot="2951ae1262344128fdf51d9ff0dee6ca" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl parentid='modal--ddc' tag='H1' aaname='Digital Download Code Registration' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </ui:UiElementExists.Target>
+    </ui:UiElementExists>
+    <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[ddcRegpopup.ToString=&quot;True&quot;]" sap:VirtualizedContainerService.HintSize="566,61" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+    <If Condition="[ddcRegpopup]" sap:VirtualizedContainerService.HintSize="566,1007" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="421,859" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;DDC Registration popup displayed after error msg&quot;]" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="379,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="DDC Registration popup displayed after error msg" />
+          <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'H1'" sap:VirtualizedContainerService.HintSize="379,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0adf09fe-5d13-4f2e-9cd0-4460645a3e10" InformativeScreenshot="accb1f802aa64f7cb9b4f94b1da7138d" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl parentid='modal--ddc' tag='H1' aaname='Digital Download Code Registration' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayMS="7000" DisplayName="Click 'Close Cross ICON'" sap:VirtualizedContainerService.HintSize="379,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2753cf94-eae5-4e6f-b0c4-023193692983" InformativeScreenshot="5b97cc24c36da1a60fdf79239a4b3886" Selector="&lt;html app='chrome.exe' title='My Cisco Entitlements' /&gt;&lt;webctrl parentid='modal--ddc' class='icon-cross close-icon' /&gt;" WaitForReady="COMPLETE">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Logout_MCE workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="ReusableFunctions\LoginLogout\Logout_MCE.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Verification completed for DDC Registration page, if user enters wrong combination of SO#,serial Number &amp; DDC, then system will throw error&quot;]" />
+        </Sequence>
+      </If.Then>
+    </If>
+  </Sequence>
+</Activity>
